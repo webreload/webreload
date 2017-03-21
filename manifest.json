@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Web Reload",
+  "description": "Reloads active resources on a web page.",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/**",
+        "https://*/**"
+      ],
+      "js": ["lib/webreload.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    "lib/webreload.js"
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
