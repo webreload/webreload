@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Web Reload",
+  "description": "Automatically reloads active resources on a web page",
+  "version": "0.0.0",
+  "background": {
+    "page": "page/background.html",
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "lib/webreload.js"
+  ],
+  "permissions": [
+    "activeTab",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_title": "Enable automatic reloading",
+    "default_icon": "image/icon-enable.png"
+  },
+  "icons": {
+    "48": "image/icon.png"
+  }
+}
+
